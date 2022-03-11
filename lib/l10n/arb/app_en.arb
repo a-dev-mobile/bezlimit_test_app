@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "enterInteger": "Enter a whole number:",
+  "save": "Save",
+  "pleaseEnterNumberFrom0To": "Please enter a number from 0 to",
+  "snackBar": "Snack bar!"
+}

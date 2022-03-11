@@ -1,0 +1,30 @@
+name: bezlimit_test_app
+description: Test app for bezlimit
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  
+  flutter:
+    sdk: flutter
+  
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_svg: ^1.0.3
+
+  intl: ^0.17.0
+
+
+dev_dependencies:
+  very_good_analysis: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/

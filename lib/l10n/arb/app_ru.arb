@@ -1,0 +1,7 @@
+{
+  "@@locale": "ru",
+  "enterInteger": "Введите целое число:",
+  "save": "Сохранить",
+  "pleaseEnterNumberFrom0To": "Пожалуста введите число от 0 до",
+  "snackBar": "Ура! Снек-бар!"
+}
