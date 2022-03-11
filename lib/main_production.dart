@@ -1,5 +1,6 @@
 import 'package:bezlimit_test_app/app/app.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 void main() {
@@ -9,7 +10,7 @@ void main() {
     SystemUiMode.manual,
     overlays: [SystemUiOverlay.bottom],
   );
-  // debugRepaintRainbowEnabled = true;
+  debugRepaintRainbowEnabled = true;
 
   runApp(const App());
 }
