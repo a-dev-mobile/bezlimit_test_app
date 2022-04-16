@@ -1,14 +1,11 @@
-name: Flutter push
+name: MY Flutter push
 
 on: push
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: ${{inputs.working_directory}} 
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 📚 Git Checkout
         uses: actions/checkout@v2 
