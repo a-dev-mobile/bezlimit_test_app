@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - "docs/**"
       - "drz-swagger/**"
-      - ".vscode/**"
+      - ".vscode/**"  
 
 # on: 
 #   push:
