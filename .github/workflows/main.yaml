@@ -1,10 +1,17 @@
-name: bezlimit_test_app
+name: Flutter_PR
+# будет реагировать на создание пул-реквеста
+on: 
+  pull_request:
+  # указать наименования (или маски) веток, которые нас интересуют.
+    branches:
+      - "develop"
+# заигнорить проектная документация, Swagger, общие настройки код-стайла и IDE.
+    paths-ignore:
+      - "docs/**"
+      - "drz-swagger/**"
+      - ".vscode/**"
 
-on: [pull_request, push]
-
-jobs:
-  build:
-    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
-    with:
-      flutter_channel: stable
-      flutter_version: 2.10.0
+on: 
+  push:
+    branches:
+      - "feature/github_action_**"
