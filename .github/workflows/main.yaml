@@ -2,12 +2,27 @@ name: MY Flutter push
 
 on: push
 
+on:
+  workflow_call:
+    inputs:
+      flutter_channel:
+        required: false
+        type: string
+        default: "stable"
+      flutter_version:
+        required: false
+        type: string
+        default: ""
+      working_directory:
+        required: false
+        type: string
+        default: "."
+
 jobs:
   build:
     defaults:
       run:
         working-directory: ${{inputs.working_directory}}
-
     runs-on: ubuntu-latest
 
     steps:
@@ -20,3 +35,9 @@ jobs:
           flutter-version: ${{inputs.flutter_version}}
           channel: ${{inputs.flutter_channel}}
           cache: true
+
+      - name: 📦 Install Dependencies
+        run: |
+          flutter pub global activate very_good_cli
+          very_good --analytics false
+          very_good packages get --recursive
