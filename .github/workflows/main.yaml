@@ -11,7 +11,7 @@ on:
       - "drz-swagger/**"
       - ".vscode/**"
 
-on: 
-  push:
-    branches:
-      - "feature/github_action_**"
+# on: 
+#   push:
+#     branches:
+#       - "feature/github_action_**"
