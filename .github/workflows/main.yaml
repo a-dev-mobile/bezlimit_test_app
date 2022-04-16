@@ -3,4 +3,9 @@ name: Flutter push
 on: push
 
 jobs:
+  build:
+    defaults:
+      run:
+        working-directory: ${{inputs.working_directory}} 
+    runs-on: ubuntu-latest
  
