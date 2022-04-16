@@ -23,4 +23,4 @@ jobs:
 
       - name: 📦 Build APK
         run: |
-          flutter build apk -t 'lib/main_production.dart'
+          flutter build apk --debug -t 'lib/main_production.dart'
