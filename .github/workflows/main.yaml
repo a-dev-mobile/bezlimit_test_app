@@ -1,4 +1,4 @@
-name: Flutter push
+name: flutter_push
 
 on: push
 
