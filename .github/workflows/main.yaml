@@ -1,26 +1,9 @@
 name: MY Flutter push
 
-on: 
-  workflow_call:
-    inputs:
-      flutter_channel:
-        required: false
-        type: string
-        default: "stable"
-      flutter_version:
-        required: false
-        type: string
-        default: ""
-      working_directory:
-        required: false
-        type: string
-        default: "."
+on: push
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: ${{inputs.working_directory}}
     runs-on: ubuntu-latest
 
     steps:
@@ -30,10 +13,8 @@ jobs:
       - name: 🐦 Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: ${{inputs.flutter_version}}
-          channel: ${{inputs.flutter_channel}}
           cache: true
-
+          
       - name: 📦 Install Dependencies
         run: |
           flutter pub global activate very_good_cli
