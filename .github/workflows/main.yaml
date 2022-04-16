@@ -2,7 +2,6 @@ name: MY Flutter push
 
 on: push
 
-on:
   workflow_call:
     inputs:
       flutter_channel:
