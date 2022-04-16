@@ -1,9 +1,6 @@
 name: MY Flutter push
 
 on: 
-  push:
-    branches:
-      - github_action_setting
   workflow_call:
     inputs:
       flutter_channel:
